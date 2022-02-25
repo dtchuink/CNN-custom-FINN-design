@@ -1,0 +1,14 @@
+#define KERNEL_DIM 1 
+#define SIMD1 16 
+#define PE1 8 
+#define MMV1 8 
+#define WIDTH 1 
+#define IFM_Channels1 64 
+#define OFM_Channels1 256 
+#define IFMDim1 56 
+#define OFMDim1 56 
+#define STRIDE 1 
+#define INPUT_PRECISION 2 
+#define TILE1 128 
+#define numReps 1 
+#define ACTIVATION_PRECISION 2 
