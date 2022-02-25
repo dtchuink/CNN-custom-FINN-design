@@ -15,6 +15,12 @@ project_prefix="hls-syn-"
 project_suffix="_top.cpp"
 top_function_start="void "
 
+#Prepare the different projects for synthesis
+vitis_hls test_conv3.tcl
+vitis_hls test_pool.tcl
+vitis_hls test_add.tcl
+
+#Read the configuration file
 exec < configuration.txt || exit 1
 read header # read (and ignore) the first line
 while IFS="," read -r Layer_name ID kernel_dim  stride  ifm_channels ofm_channels simd pe ifm_dimension ofm_dimension precision reps
