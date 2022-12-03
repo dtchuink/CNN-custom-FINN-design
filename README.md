@@ -5,4 +5,7 @@ One can generate design of a quantized model per:
 
   - Layer
   - Block (example residual block of ResNet)
+  
+  Run for the layer granularity:
+    - python vitis_compilation_script.py
 
